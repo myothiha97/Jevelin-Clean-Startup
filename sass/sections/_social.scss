@@ -39,6 +39,14 @@
       transform: scale(0.8);
       width: 40rem;
     }
+
+    @media (max-width: 340px) {
+      width: 35rem;
+    }
+
+    @media (max-width: 290px) {
+      width: 30rem;
+    }
     p:nth-of-type(1) {
       font-size: 2rem;
       @include respond(tab-port) {

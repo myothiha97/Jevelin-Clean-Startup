@@ -2,11 +2,37 @@
   padding: 15rem 10rem;
   background-color: #f8f8ff;
   color: #616181;
+
+  @include respond(tab-port) {
+    padding: 10rem 5rem;
+  }
+
+  @include respond(phone) {
+    padding: 5rem 2rem;
+  }
+
+  @media (max-width: 468px) {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 468px) {
+      text-align: center;
+    }
+
+    @include respond(smallPhone) {
+      transform: scale(0.8);
+    }
     &--left {
       h1 {
         font-size: 5rem;
@@ -14,6 +40,18 @@
       p {
         font-size: 1.7rem;
         width: 40rem;
+
+        @include respond(tab-port) {
+          width: 25rem;
+        }
+
+        @include respond(phone) {
+          width: 45rem;
+        }
+
+        @media (max-width: 468px) {
+          width: auto;
+        }
       }
 
       .footer__icons {
@@ -31,6 +69,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include respond(phone) {
+        width: 80%;
+        // flex-direction: column;
+      }
+
+      @include respond(smallPhone) {
+        // transform: translateX(-30px);
+        width: 35rem;
+      }
 
       .footer__right--col {
         h1 {

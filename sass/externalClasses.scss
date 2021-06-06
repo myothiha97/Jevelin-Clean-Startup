@@ -1,1 +1,21 @@
+.deactivateSide {
+  transform: translateY(70px);
+  opacity: 0;
+  visibility: hidden;
+}
 
+.activeSide {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.positionFix {
+  position: fixed;
+}
+
+.hoverIconActive {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -146,6 +146,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 1450px) {
+      padding: 0 10rem;
+    }
+
     @include respond(tab-land) {
       padding: 0 6rem;
     }
@@ -213,6 +217,10 @@
 
       @include respond(phone) {
         text-align: center;
+      }
+
+      @media (max-width: 370px) {
+        transform: scale(0.9);
       }
 
       p:nth-of-type(1) {

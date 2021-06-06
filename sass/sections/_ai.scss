@@ -25,14 +25,19 @@
     width: 50rem;
     margin-left: 20rem;
 
-    @include respond(smallPhone) {
-      transform: scale(0.8);
-    }
-
     @include respond(tab-port) {
       margin-left: 0;
       width: 40rem;
     }
+
+    @media (max-width: 400px) {
+      width: 300px;
+    }
+
+    @include respond(smallPhone) {
+      transform: scale(0.8);
+    }
+
     p:nth-of-type(1) {
       font-size: 2rem;
       @include respond(tab-port) {
