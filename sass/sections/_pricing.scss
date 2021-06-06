@@ -1,0 +1,87 @@
+.pricing {
+  padding: 10rem;
+  background-color: #f8f8ff;
+  text-align: center;
+
+  @include respond(smallPhone) {
+    padding: 6rem 0 0 0;
+  }
+
+  &__para {
+    font-size: 2rem;
+  }
+
+  &__header {
+    font-size: 3rem;
+  }
+
+  &__cards {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-port) {
+      margin-top: 1rem;
+    }
+
+    @include respond(phone) {
+      transform: scale(0.8);
+    }
+
+    @media (max-width: 508px) {
+      flex-direction: column;
+    }
+
+    @include respond(smallPhone) {
+      flex-direction: column;
+      margin-top: -13rem;
+    }
+
+    .pricing__card {
+      padding: 12rem 4rem 12rem 4rem;
+      width: 40rem;
+
+      @include respond(tab-port) {
+        padding: 7rem 4rem;
+      }
+
+      @include respond(smallPhone) {
+        padding: 5rem 4rem;
+      }
+
+      &:nth-of-type(2) {
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem rgba(black, 0.2);
+
+        @include respond(smallPhone) {
+          box-shadow: none;
+          background-color: #f8f8ff;
+        }
+      }
+
+      p:first-of-type {
+        font-size: 2rem;
+      }
+
+      h1 {
+        margin-bottom: 2rem;
+        font-size: 8rem;
+
+        @include respond(tab-land) {
+          font-size: 5rem;
+        }
+
+        // @include respond(tab-port) {
+        //   font-size: 5rem;
+        // }
+      }
+
+      p:last-of-type {
+        font-size: 1.6rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}

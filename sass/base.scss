@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}

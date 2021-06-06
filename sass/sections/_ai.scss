@@ -1,0 +1,60 @@
+.ai {
+  padding: 10rem 15rem 10rem 22rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+
+  &__left {
+    transform: scale(0.8);
+    @include respond(tab-port) {
+      transform: scale(0.6);
+    }
+  }
+
+  &__right {
+    width: 50rem;
+    margin-left: 20rem;
+
+    @include respond(smallPhone) {
+      transform: scale(0.8);
+    }
+
+    @include respond(tab-port) {
+      margin-left: 0;
+      width: 40rem;
+    }
+    p:nth-of-type(1) {
+      font-size: 2rem;
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+      }
+    }
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1.5em;
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
+    }
+
+    p:last-of-type {
+      font-size: 1.6rem;
+
+      @include respond(tab-port) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

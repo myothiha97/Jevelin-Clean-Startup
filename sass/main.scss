@@ -1,0 +1,18 @@
+@import "utils/mixins";
+@import "base.scss";
+
+@import "logos.scss";
+
+@import "externalClasses.scss";
+@import "sections/header";
+@import "sections/gridInfo";
+@import "sections/ai";
+@import "sections/social";
+@import "sections/video";
+@import "sections/pricing";
+@import "sections/customer";
+@import "sections/form";
+@import "sections/news";
+@import "sections/footer";
+
+@import "components/buttons";

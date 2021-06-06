@@ -1,0 +1,41 @@
+.grid-info {
+  padding: 10rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(tab-port) {
+    padding: 10rem 5rem;
+    margin-top: 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
+
+  .grid__card {
+    width: 30rem;
+    font-size: 3rem;
+    text-align: center;
+
+    @include respond(tab-port) {
+      transform: scale(0.95);
+    }
+
+    i {
+      font-size: 4rem;
+      color: #507df5;
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}

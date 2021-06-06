@@ -1,0 +1,133 @@
+.customer-wrapper {
+  padding: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-land) {
+    padding: 8rem;
+  }
+
+  .customer {
+    width: 100rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-land) {
+      justify-content: space-between;
+    }
+
+    @include respond(tab-port) {
+      transform: scale(0.85);
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      transform: scale(0.95);
+    }
+
+    &__left {
+      width: 50%;
+
+      @include respond(phone) {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      @include respond(smallPhone) {
+        width: 50%;
+      }
+
+      p:first-of-type {
+        font-size: 2rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        @include respond(phone) {
+          font-size: 2.4rem;
+        }
+      }
+
+      p:last-of-type {
+        font-size: 1.6rem;
+
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &__right {
+      padding: 8rem 3rem;
+      overflow: hidden;
+      width: 40rem;
+      height: 44rem;
+      background-color: #f8f8ff;
+      position: relative;
+
+      @include respond(smallPhone) {
+        transform: scale(0.8);
+      }
+
+      .customer__comment {
+        height: 44rem;
+        width: 30rem;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        transition: all 0.5s linear;
+
+        &:nth-of-type(1) {
+          z-index: 3;
+        }
+
+        &:nth-of-type(2) {
+          z-index: 2;
+        }
+
+        &:nth-of-type(3) {
+          z-index: 1;
+        }
+
+        img {
+          border-radius: 50%;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          &:last-of-type {
+            margin-top: 4rem;
+          }
+        }
+      }
+
+      .customer__dots {
+        width: 7rem;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .customer__dot {
+          width: 1rem;
+          height: 1rem;
+          background-color: #95a7e4; //#5472d2 for active
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.active-dot {
+  background-color: #5472d2;
+  transform: scale(1.5);
+}
