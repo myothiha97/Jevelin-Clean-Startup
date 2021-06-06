@@ -332,9 +332,9 @@ button {
       .ai__right {
         margin-left: 0;
         width: 40rem; } }
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       .ai__right {
-        width: 300px; } }
+        width: 290px; } }
     @media (max-width: 360px) {
       .ai__right {
         transform: scale(0.8); } }
@@ -889,6 +889,11 @@ button {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      @media (max-width: 420px) {
+        .footer__content--left .footer__icons {
+          margin: 0 auto;
+          margin-bottom: 2rem;
+          margin-top: 2rem; } }
     .footer__content--right {
       width: 50%;
       display: flex;
@@ -897,6 +902,9 @@ button {
       @media (max-width: 600px) {
         .footer__content--right {
           width: 80%; } }
+      @media (max-width: 460px) {
+        .footer__content--right {
+          width: 35rem; } }
       @media (max-width: 360px) {
         .footer__content--right {
           width: 35rem; } }
